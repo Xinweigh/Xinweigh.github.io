@@ -6,13 +6,22 @@
     <description>Recent content in hugo on Xinweigh&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://Xinweigh.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://Xinweigh.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 博客搭建、发布到github上及一些方便的环境配置</title>
+      <link>http://Xinweigh.github.io/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://Xinweigh.github.io/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <description>前言 其实很久之前就准备搭建博客来着，不过一直在搞其他事情，没找到时间搞起来，这次终于考研完得空搭好。搭建过程在此记录，作为第一篇博客文章发布</description>
+    </item>
+    
     <item>
       <title>How to Contribute</title>
-      <link>http://Xinweigh.github.io/post/docs/how-to-contribute/</link>
+      <link>http://Xinweigh.github.io/demo_post/docs/how-to-contribute/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://Xinweigh.github.io/post/docs/how-to-contribute/</guid>
+      <guid>http://Xinweigh.github.io/demo_post/docs/how-to-contribute/</guid>
       <description>Contributing to Jane There are many ways to contribute to the Jane theme: submitting pull requests, reporting issues, providing new translations, and creating suggestions.
 Build and Run If you want to understand how Jane works, you&amp;rsquo;ll want to get the source, build it, and run locally.
 Getting the sources git clone https://github.com/xianmin/hugo-theme-jane.git Prerequisites You need install the Hugo_extended version to use Hugo Pipes.
@@ -21,10 +30,10 @@ We recommend that you use VSCode. And if you edit .</description>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>http://Xinweigh.github.io/post/other/hugoisforlovers/</link>
+      <link>http://Xinweigh.github.io/demo_post/other/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://Xinweigh.github.io/post/other/hugoisforlovers/</guid>
+      <guid>http://Xinweigh.github.io/demo_post/other/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo

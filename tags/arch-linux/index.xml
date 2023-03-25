@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arch Linux on Xinweigh&#39;s blog</title>
+    <link>http://Xinweigh.github.io/tags/arch-linux/</link>
+    <description>Recent content in Arch Linux on Xinweigh&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://Xinweigh.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 博客搭建、发布到github上及一些方便的环境配置</title>
+      <link>http://Xinweigh.github.io/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://Xinweigh.github.io/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <description>前言 其实很久之前就准备搭建博客来着，不过一直在搞其他事情，没找到时间搞起来，这次终于考研完得空搭好。搭建过程在此记录，作为第一篇博客文章发布</description>
+    </item>
+    
+  </channel>
+</rss>

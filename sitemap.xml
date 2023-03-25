@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://Xinweigh.github.io/post/jane-theme-preview/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/jane-theme-preview/</loc>
     <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -16,14 +16,91 @@
   </url>
   
   <url>
+    <loc>http://Xinweigh.github.io/tags/arch-linux/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://Xinweigh.github.io/categories/</loc>
-    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/tags/github-pages/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/tags/hugo/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/categories/hugo/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/post/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/tags/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/tags/zsh/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/categories/zsh/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://Xinweigh.github.io/tags/contribute/</loc>
+    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://Xinweigh.github.io/demo_post/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -58,14 +135,7 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/docs/how-to-contribute/</loc>
-    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://Xinweigh.github.io/tags/hugo/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/docs/how-to-contribute/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -79,28 +149,7 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/</loc>
-    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://Xinweigh.github.io/tags/</loc>
-    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://Xinweigh.github.io/</loc>
-    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://Xinweigh.github.io/post/demo/2-toc/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/demo/2-toc/</loc>
     <lastmod>2022-02-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -142,14 +191,14 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/other/test-toc/global-toc-except-this/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/other/test-toc/global-toc-except-this/</loc>
     <lastmod>2022-02-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/other/test-toc/no-header-dont-show-toc/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/other/test-toc/no-header-dont-show-toc/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -163,7 +212,7 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/demo/5-math/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/demo/5-math/</loc>
     <lastmod>2019-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -212,21 +261,21 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/demo/7-shortcodes-preview/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/demo/7-shortcodes-preview/</loc>
     <lastmod>2018-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/demo/1-image/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/demo/1-image/</loc>
     <lastmod>2018-03-04T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/demo/6-shortcode-notice/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/demo/6-shortcode-notice/</loc>
     <lastmod>2018-03-04T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -247,7 +296,7 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/demo/4-footnote/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/demo/4-footnote/</loc>
     <lastmod>2018-03-01T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -289,7 +338,7 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/other/english-preview/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/other/english-preview/</loc>
     <lastmod>2017-08-31T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -310,28 +359,28 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/other/this-is-a-very-long-title/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/other/this-is-a-very-long-title/</loc>
     <lastmod>2017-08-30T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/other/creating-a-new-theme/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/other/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/other/goisforlovers/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/other/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/other/hugoisforlovers/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/other/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -345,14 +394,14 @@
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/other/migrate-from-jekyll/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/other/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://Xinweigh.github.io/post/demo/3-syntax-highlighting/</loc>
+    <loc>http://Xinweigh.github.io/demo_post/demo/3-syntax-highlighting/</loc>
     <lastmod>2017-08-30T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
