@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>
-           - Xinweigh&#39;s blog
+          Hugo 博客搭建、发布到github上及一些方便的环境配置 - Xinweigh&#39;s blog
         </title>
     
 
@@ -67,18 +67,18 @@
 
 
 
-<meta property="og:title" content="" />
+<meta property="og:title" content="Hugo 博客搭建、发布到github上及一些方便的环境配置" />
 <meta property="og:description" content="Arch Linux &#43; Nvidia &#43; Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://Xinweigh.github.io/post/arch-linux-&#43;-nvidia-&#43;-vulkan%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-00f85c7303624eefa7f18ce8aacf1c69/" /><meta property="article:section" content="post" />
-
-
-<meta itemprop="name" content="">
-<meta itemprop="description" content="Arch Linux &#43; Nvidia &#43; Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参">
-
+<meta property="article:published_time" content="2023-03-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-25T00:00:00+00:00" />
+<meta itemprop="name" content="Hugo 博客搭建、发布到github上及一些方便的环境配置">
+<meta itemprop="description" content="Arch Linux &#43; Nvidia &#43; Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参"><meta itemprop="datePublished" content="2023-03-25T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-03-25T00:00:00+00:00" />
 <meta itemprop="wordCount" content="525">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
+<meta itemprop="keywords" content="Hugo,Github Pages,Arch Linux,zsh," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo 博客搭建、发布到github上及一些方便的环境配置"/>
 <meta name="twitter:description" content="Arch Linux &#43; Nvidia &#43; Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参"/>
 
 <!--[if lte IE 9]>
@@ -383,7 +383,7 @@
       <article class="post">
         
         <header class="post-header">
-          <h1 class="post-title"></h1>
+          <h1 class="post-title">Hugo 博客搭建、发布到github上及一些方便的环境配置</h1>
           
 
           <div class="post-meta">
@@ -398,8 +398,8 @@
   </div>
 
   <div class="post-meta-time">
-    <time datetime="0001-01-01">
-      0001-01-01
+    <time datetime="2023-03-25">
+      2023-03-25
     </time>
   </div>
 
@@ -409,7 +409,11 @@
   <div class="post-meta__right">
     
 
-    
+    <div class="post-meta-category">
+        <a href="http://Xinweigh.github.io/categories/hugo/"> Hugo </a>
+          <a href="http://Xinweigh.github.io/categories/zsh/"> zsh </a>
+          
+      </div>
 
 
     
@@ -425,13 +429,13 @@
 
         
         <div class="post-content">
-          <h1 id="arch-linux--nvidia--vulkan环境配置">Arch Linux + Nvidia + Vulkan环境配置</h1>
+          <h2 id="arch-linux--nvidia--vulkan环境配置">Arch Linux + Nvidia + Vulkan环境配置</h2>
 <blockquote>
 <p>起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参阅日志文件。关于日志文件的更多信息，请参考以下页面：如何上传日志文件。
 在Vulkan模式下存在这个错误，换成OpenGL就不会报错了。但是OpenGL的运行效率低到令人发指，故尝试修复。
 其实现阶段只是用来打游戏。</p>
 </blockquote>
-<h1 id="1-收集错误信息">1. 收集错误信息</h1>
+<h3 id="1-收集错误信息">1. 收集错误信息</h3>
 <p>查一下yuzu的日志：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">cat</span> <span style="color:#f92672">~</span><span style="color:#960050;background-color:#1e0010">/.local/share/yuzu/log/yuzu_log.txt</span>
 </span></span></code></pre></div><p>得到一些结果：</p>
@@ -442,7 +446,7 @@
 </span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3423.644251</span>] <span style="color:#a6e22e">WebService</span> &lt;<span style="color:#f92672">Error</span>&gt; <span style="color:#a6e22e">web_service</span><span style="color:#f92672">/</span><span style="color:#a6e22e">web_backend</span>.<span style="color:#a6e22e">cpp</span><span style="color:#f92672">:</span><span style="color:#a6e22e">GenericRequest</span><span style="color:#f92672">:</span><span style="color:#ae81ff">120</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">POST</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//api.yuzu-emu.org/telemetry returned error status code: 400
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[<span style="color:#ae81ff">3423.644251</span>] <span style="color:#a6e22e">WebService</span> &lt;<span style="color:#f92672">Error</span>&gt; <span style="color:#a6e22e">web_service</span><span style="color:#f92672">/</span><span style="color:#a6e22e">web_backend</span>.<span style="color:#a6e22e">cpp</span><span style="color:#f92672">:</span><span style="color:#a6e22e">GenericRequest</span><span style="color:#f92672">:</span><span style="color:#ae81ff">120</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">POST</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//api.yuzu-emu.org/telemetry returned error status code: 400
 </span></span></span></code></pre></div><p>看样子是某个Vulkan的视频核心相关插件没启动成功</p>
-<h1 id="2-检查修复环境">2. 检查&amp;修复环境</h1>
+<h3 id="2-检查修复环境">2. 检查&amp;修复环境</h3>
 <p>看看提到的<code>VK_KHR_xlib_surface</code>是干嘛的：</p>
 <p><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_xlib_surface.html">VK_KHR_xlib_surface(3)</a></p>
 <p>是个提供Xorg支持的实例，这种应该会在安装套件时候直接包含。</p>
@@ -470,7 +474,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      0001-01-01
+      2023-03-25
       
     </span>
   </p>
@@ -488,26 +492,32 @@
 
 
         <footer class="post-footer">
-          
+          <div class="post-tags">
+              <a href="http://Xinweigh.github.io/tags/hugo/">Hugo</a>
+                <a href="http://Xinweigh.github.io/tags/github-pages/">Github Pages</a>
+                <a href="http://Xinweigh.github.io/tags/arch-linux/">Arch Linux</a>
+                <a href="http://Xinweigh.github.io/tags/zsh/">zsh</a>
+                
+            </div>
 
 
           
           <nav class="post-nav">
             
-              <a class="prev" href="/post/demo/3-syntax-highlighting/">
+            
+              <a class="next" href="/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                <span class="next-text nav-default">Hugo 博客搭建、发布到github上及一些方便的环境配置</span>
+                <span class="prev-text nav-mobile">下一篇</span>
                 
                 <i class="iconfont">
-                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
 </svg>
 
                 </i>
-                <span class="prev-text nav-default">Demo: Syntax Highlighting</span>
-                <span class="prev-text nav-mobile">上一篇</span>
               </a>
-            
           </nav>
         </footer>
       </article>
@@ -541,7 +551,21 @@
     </div>
 
     
-    
+    <nav class="toc" id="toc">
+    <div class="toc-title">文章目录</div>
+    <div class="toc-content custom-scrollbar">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#arch-linux--nvidia--vulkan环境配置">Arch Linux + Nvidia + Vulkan环境配置</a>
+      <ul>
+        <li><a href="#1-收集错误信息">1. 收集错误信息</a></li>
+        <li><a href="#2-检查修复环境">2. 检查&amp;修复环境</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </nav>
 
 
   </div>

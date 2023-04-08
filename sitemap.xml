@@ -44,6 +44,13 @@
   </url>
   
   <url>
+    <loc>http://Xinweigh.github.io/post/arch-linux-&#43;-nvidia-&#43;-vulkan%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-00f85c7303624eefa7f18ce8aacf1c69/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://Xinweigh.github.io/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2023-03-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -291,12 +298,6 @@
   <url>
     <loc>http://Xinweigh.github.io/tags/tag-5/</loc>
     <lastmod>2017-08-30T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://Xinweigh.github.io/post/arch-linux-&#43;-nvidia-&#43;-vulkan%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-00f85c7303624eefa7f18ce8aacf1c69/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
