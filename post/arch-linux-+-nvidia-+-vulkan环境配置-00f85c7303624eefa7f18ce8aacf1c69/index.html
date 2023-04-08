@@ -7,7 +7,9 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>themes · Xinweigh&#39;s blog</title>
+    <title>
+           - Xinweigh&#39;s blog
+        </title>
     
 
 <meta name="renderer" content="webkit" />
@@ -27,7 +29,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xinweigh" />
-  <meta name="description" content="Xinweigh&#39;s blog." />
+  <meta name="description" content="Arch Linux &#43; Nvidia &#43; Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -38,8 +41,8 @@
 <meta name="generator" content="Hugo 0.111.3" />
 
 
-<link rel="canonical" href="http://Xinweigh.github.io/tags/themes/" />
-<link href="/tags/themes/index.xml" rel="alternate" type="application/rss+xml" title="Xinweigh&#39;s blog" />
+<link rel="canonical" href="http://Xinweigh.github.io/post/arch-linux-&#43;-nvidia-&#43;-vulkan%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-00f85c7303624eefa7f18ce8aacf1c69/" />
+
 
 
 
@@ -64,14 +67,19 @@
 
 
 
-<meta property="og:title" content="themes" />
-<meta property="og:description" content="Xinweigh&#39;s blog." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://Xinweigh.github.io/tags/themes/" />
-<meta itemprop="name" content="themes">
-<meta itemprop="description" content="Xinweigh&#39;s blog."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="themes"/>
-<meta name="twitter:description" content="Xinweigh&#39;s blog."/>
+<meta property="og:title" content="" />
+<meta property="og:description" content="Arch Linux &#43; Nvidia &#43; Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://Xinweigh.github.io/post/arch-linux-&#43;-nvidia-&#43;-vulkan%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-00f85c7303624eefa7f18ce8aacf1c69/" /><meta property="article:section" content="post" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Arch Linux &#43; Nvidia &#43; Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参">
+
+<meta itemprop="wordCount" content="525">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Arch Linux &#43; Nvidia &#43; Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -370,56 +378,173 @@
 
     <div id="mobile-panel">
       <main id="main" class="main bg-llight wallpaper">
+        <div class="content-wrapper">
+    <div id="content" class="content">
+      <article class="post">
+        
+        <header class="post-header">
+          <h1 class="post-title"></h1>
+          
+
+          <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      <a href="/about">
+        <span class="post-meta-author-name">
+          xinweigh
+        </span>
+      </a>
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="0001-01-01">
+      0001-01-01
+    </time>
+  </div>
+
+  
+
+
+  <div class="post-meta__right">
+    
+
+    
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+        </header>
+
+        
+        <div class="post-content">
+          <h1 id="arch-linux--nvidia--vulkan环境配置">Arch Linux + Nvidia + Vulkan环境配置</h1>
+<blockquote>
+<p>起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参阅日志文件。关于日志文件的更多信息，请参考以下页面：如何上传日志文件。
+在Vulkan模式下存在这个错误，换成OpenGL就不会报错了。但是OpenGL的运行效率低到令人发指，故尝试修复。
+其实现阶段只是用来打游戏。</p>
+</blockquote>
+<h1 id="1-收集错误信息">1. 收集错误信息</h1>
+<p>查一下yuzu的日志：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">cat</span> <span style="color:#f92672">~</span><span style="color:#960050;background-color:#1e0010">/.local/share/yuzu/log/yuzu_log.txt</span>
+</span></span></code></pre></div><p>得到一些结果：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span>[<span style="color:#ae81ff">3416.648985</span>] <span style="color:#a6e22e">Render</span>.<span style="color:#a6e22e">Vulkan</span> &lt;<span style="color:#f92672">Error</span>&gt; <span style="color:#a6e22e">video_core</span><span style="color:#f92672">/</span><span style="color:#a6e22e">vulkan_common</span><span style="color:#f92672">/</span><span style="color:#a6e22e">vulkan_instance</span>.<span style="color:#a6e22e">cpp</span><span style="color:#f92672">:</span><span style="color:#a6e22e">AreExtensionsSupported</span><span style="color:#f92672">:</span><span style="color:#ae81ff">91</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Required</span> <span style="color:#a6e22e">instance</span> <span style="color:#a6e22e">extension</span> <span style="color:#a6e22e">VK_KHR_xlib_surface</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">not</span> <span style="color:#a6e22e">available</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3416.649051</span>] <span style="color:#a6e22e">Render</span>.<span style="color:#a6e22e">Vulkan</span> &lt;<span style="color:#f92672">Error</span>&gt; <span style="color:#a6e22e">video_core</span><span style="color:#f92672">/</span><span style="color:#a6e22e">renderer_vulkan</span><span style="color:#f92672">/</span><span style="color:#a6e22e">renderer_vulkan</span>.<span style="color:#a6e22e">cpp</span><span style="color:#f92672">:</span><span style="color:#a6e22e">RendererVulkan</span><span style="color:#f92672">:</span><span style="color:#ae81ff">106</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Vulkan</span> <span style="color:#a6e22e">initialization</span> <span style="color:#a6e22e">failed</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">error</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">VK_ERROR_EXTENSION_NOT_PRESENT</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3416.649073</span>] <span style="color:#a6e22e">HW</span>.<span style="color:#a6e22e">GPU</span> &lt;<span style="color:#f92672">Error</span>&gt; <span style="color:#a6e22e">video_core</span><span style="color:#f92672">/</span><span style="color:#a6e22e">video_core</span>.<span style="color:#a6e22e">cpp</span><span style="color:#f92672">:</span><span style="color:#a6e22e">CreateGPU</span><span style="color:#f92672">:</span><span style="color:#ae81ff">57</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Failed</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">initialize</span> <span style="color:#a6e22e">GPU</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Vulkan</span> <span style="color:#a6e22e">initialization</span> <span style="color:#a6e22e">error</span> <span style="color:#a6e22e">VK_ERROR_EXTENSION_NOT_PRESENT</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3416.649100</span>] <span style="color:#a6e22e">Core</span> &lt;<span style="color:#f92672">Critical</span>&gt; <span style="color:#a6e22e">core</span><span style="color:#f92672">/</span><span style="color:#a6e22e">core</span>.<span style="color:#a6e22e">cpp</span><span style="color:#f92672">:</span><span style="color:#a6e22e">Load</span><span style="color:#f92672">:</span><span style="color:#ae81ff">278</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Failed</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">initialize</span> <span style="color:#a6e22e">system</span> (Error <span style="color:#ae81ff">5</span>)<span style="color:#f92672">!</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3423.644251</span>] <span style="color:#a6e22e">WebService</span> &lt;<span style="color:#f92672">Error</span>&gt; <span style="color:#a6e22e">web_service</span><span style="color:#f92672">/</span><span style="color:#a6e22e">web_backend</span>.<span style="color:#a6e22e">cpp</span><span style="color:#f92672">:</span><span style="color:#a6e22e">GenericRequest</span><span style="color:#f92672">:</span><span style="color:#ae81ff">120</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">POST</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//api.yuzu-emu.org/telemetry returned error status code: 400
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[<span style="color:#ae81ff">3423.644251</span>] <span style="color:#a6e22e">WebService</span> &lt;<span style="color:#f92672">Error</span>&gt; <span style="color:#a6e22e">web_service</span><span style="color:#f92672">/</span><span style="color:#a6e22e">web_backend</span>.<span style="color:#a6e22e">cpp</span><span style="color:#f92672">:</span><span style="color:#a6e22e">GenericRequest</span><span style="color:#f92672">:</span><span style="color:#ae81ff">120</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">POST</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//api.yuzu-emu.org/telemetry returned error status code: 400
+</span></span></span></code></pre></div><p>看样子是某个Vulkan的视频核心相关插件没启动成功</p>
+<h1 id="2-检查修复环境">2. 检查&amp;修复环境</h1>
+<p>看看提到的<code>VK_KHR_xlib_surface</code>是干嘛的：</p>
+<p><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_xlib_surface.html">VK_KHR_xlib_surface(3)</a></p>
+<p>是个提供Xorg支持的实例，这种应该会在安装套件时候直接包含。</p>
+<p>首先查阅万能的Arch Wiki，把该装的驱动都装一遍：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">yay</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">S</span> <span style="color:#a6e22e">nvidia</span> <span style="color:#a6e22e">nvidia</span><span style="color:#f92672">-</span><span style="color:#a6e22e">utils</span> <span style="color:#a6e22e">vulkan</span><span style="color:#f92672">-</span><span style="color:#a6e22e">tools</span>
+</span></span></code></pre></div><p>发现都是最新版了……</p>
+<p>再次查阅万能的Arch Wiki</p>
+<p><a href="https://wiki.archlinuxcn.org/wiki/Vulkan">Vulkan -  Arch Linux 中文维基</a></p>
+<ul>
+<li>测试vulkaninfo命令——失效</li>
+<li>测试echo $VK_ICD_FILENAMES——无输出</li>
+<li>export添加变量VK_ICD_FILENAMES</li>
+</ul>
+<p>重启，vulkaninfo和yuzu都正常了</p>
+
+        </div>
+
+        
+        
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">xinweigh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      0001-01-01
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+
+        
         
 
-<section id="archive" class="archive">
-  
-    
-      <div class="archive-title tag">
-        <h2 class="archive-name">标签： themes</h2>
-      </div>
-    
+
+        <footer class="post-footer">
+          
+
+
+          
+          <nav class="post-nav">
+            
+              <a class="prev" href="/post/demo/3-syntax-highlighting/">
+                
+                <i class="iconfont">
+                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+                </i>
+                <span class="prev-text nav-default">Demo: Syntax Highlighting</span>
+                <span class="prev-text nav-mobile">上一篇</span>
+              </a>
+            
+          </nav>
+        </footer>
+      </article>
+
+      
+      
+
+
+      
+      
+
   
 
   
-    <div class="archive-post">
-      <time datetime="2022-02-22" class="archive-post-time">
-        2022-02-22
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/demo/2-toc/" class="archive-post-link">
-          Demo: toc
-        </a>
-      </span>
+  
+
+  
+  
+
+  
+
+  
+
+    
+
+  
+
+  
+
+
     </div>
-  
-</section>
+
+    
+    
 
 
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
-
+  </div>
 
       </main>
 
