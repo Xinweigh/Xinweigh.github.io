@@ -8,6 +8,15 @@
     <language>zh-cn</language>
     <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://Xinweigh.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Games</title>
+      <link>http://Xinweigh.github.io/categories/games/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://Xinweigh.github.io/categories/games/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>http://Xinweigh.github.io/categories/hugo/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
@@ -17,74 +26,20 @@
     </item>
     
     <item>
+      <title>Vulkan</title>
+      <link>http://Xinweigh.github.io/categories/vulkan/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://Xinweigh.github.io/categories/vulkan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>zsh</title>
       <link>http://Xinweigh.github.io/categories/zsh/</link>
       <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://Xinweigh.github.io/categories/zsh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
-      <link>http://Xinweigh.github.io/categories/development/</link>
-      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://Xinweigh.github.io/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>http://Xinweigh.github.io/categories/golang/</link>
-      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://Xinweigh.github.io/categories/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>index</title>
-      <link>http://Xinweigh.github.io/categories/index/</link>
-      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://Xinweigh.github.io/categories/index/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>demo</title>
-      <link>http://Xinweigh.github.io/categories/demo/</link>
-      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
-      
-      <guid>http://Xinweigh.github.io/categories/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>http://Xinweigh.github.io/categories/math/</link>
-      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
-      
-      <guid>http://Xinweigh.github.io/categories/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>http://Xinweigh.github.io/categories/shortcodes/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>http://Xinweigh.github.io/categories/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>http://Xinweigh.github.io/categories/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
-      
-      <guid>http://Xinweigh.github.io/categories/syntax-highlighting/</guid>
       <description></description>
     </item>
     

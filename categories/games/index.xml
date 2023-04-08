@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on Xinweigh&#39;s blog</title>
+    <link>http://Xinweigh.github.io/categories/games/</link>
+    <description>Recent content in Games on Xinweigh&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://Xinweigh.github.io/categories/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch Linux &#43; Nvidia &#43; Vulkan环境配置</title>
+      <link>http://Xinweigh.github.io/post/arch-linux-&#43;-nvidia-&#43;-vulkan%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://Xinweigh.github.io/post/arch-linux-&#43;-nvidia-&#43;-vulkan%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>Arch Linux + Nvidia + Vulkan环境配置 起因是Yuzu模拟器报了启动错误：在运行视频核心时发生错误。这可能是由 gpu 驱动程序过旧造成的。有关详细信息，请参</description>
+    </item>
+    
+  </channel>
+</rss>
